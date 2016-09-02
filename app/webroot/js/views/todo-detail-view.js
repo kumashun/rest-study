@@ -22,10 +22,11 @@ var app = app || {};
 			this.model = new app.TodoModel({
 				id : id
 			});
-			//モデルのサーバからのデータ取得完了時、描画を行う
-			this.listenTo(this.model, 'sync', this.render);
 			//モデル破棄(destroy)イベント発生時、Viewを削除
 			this.listenTo(this.model, 'destroy', this.remove);
+			//モデルのサーバからのデータ取得完了時、描画を行う
+			this.listenTo(this.model, 'sync', this.render);
+
 			//サーバからデータ取得
 			this.model.fetch({
 				wait : true
