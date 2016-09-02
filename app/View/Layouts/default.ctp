@@ -60,23 +60,23 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	</div>
 	</script>
 
-	<!-- ① js(library) -->
+	<!--  ① js(library) -->
 	<script src="js/lib/jquery-2.1.3.min.js" type="text/javascript"></script>
 	<script src="js/lib/underscore-min.js" type="text/javascript"></script>
 	<script src="js/lib/backbone-min.js" type="text/javascript"></script>
 
 	<!-- js(application) -->
-	<!--	model	-->
+	<!--  ② model	-->
 	<script src="js/models/todo-model.js" type="text/javascript"></script>
-	<!--	collection	-->
+	<!--  ③ collection	-->
 	<script src="js/collections/todo-collection.js" type="text/javascript"></script>
-	<!--	view	-->
+	<!--  ④ view	-->
 	<script src="js/views/todo-item-view.js" type="text/javascript"></script>
 	<script src="js/views/todo-detail-view.js" type="text/javascript"></script>
 	<script src="js/views/todo-collection-view.js" type="text/javascript"></script
-	<!--  ② router	-->
+	<!--  ⑤ router	-->
 	<script src="js/routers/router.js" type="text/javascript"></script>
-	<!--  ③ entry point	-->
+	<!--  ⑥ entry point	-->
 	<script src="js/app.js" type="text/javascript"></script>
 
 </body>
